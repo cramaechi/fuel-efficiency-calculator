@@ -9,7 +9,7 @@ A simple program that calculates the number of miles per gallon a car can delive
    ```
    $ git clone https://github.com/cramaechi/fuel-efficiency-calculator.git
    ```
-    or [download as ZIP](https://github.com/cramaechi/binary-search-tree/archive/master.zip).
+    or [download as ZIP](https://github.com/cramaechi/fuel-efficiency-calculator/archive/master.zip).
 
 3. Go to the project folder:
 
