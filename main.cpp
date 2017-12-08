@@ -14,47 +14,47 @@ double milesPerGallon(int liters, int numberOfMiles);
 
 int main(int argc, char* argv[])
 {
-	char ans;
-	do
-	{
-	   int liters, miles;
-	   cout<<"Enter the number of liters consumed by your car: ";
-	   cin>> liters;
-	   cout<<endl;
-	   cout<<"Enter the number of miles driven by your car: ";
-	   cin>>miles;
-	   cout<<endl;
-	   cout<<"Your car has delivered ";
-	   cout.setf(ios::fixed);
-	   cout.setf(ios::showpoint);
-	   cout.precision(2);
-	   cout<<milesPerGallon(liters, miles)<<" miles per gallon."<<endl;
-	   cout<<endl;
-	   cout<<"Start over? ";
-	   cin>>ans;
+    char ans;
+    do
+    {
+        int liters, miles;
+        cout<<"Enter the number of liters consumed by your car: ";
+        cin>> liters;
+        cout<<endl;
+        cout<<"Enter the number of miles driven by your car: ";
+        cin>>miles;
+        cout<<endl;
+        cout<<"Your car has delivered ";
+        cout.setf(ios::fixed);
+        cout.setf(ios::showpoint);
+        cout.precision(2);
+        cout<<milesPerGallon(liters, miles)<<" miles per gallon."<<endl;
+        cout<<endl;
+        cout<<"Start over? ";
+        cin>>ans;
 
-	   if (ans == 'y' || ans == 'Y')
+        if (ans == 'y' || ans == 'Y')
             cout<<"\n\n";
     }while(ans == 'y' || ans == 'Y');
 
-	return 0;
-	system("PAUSE");
+    return 0;
+    system("PAUSE");
 }
 
 double milesPerGallon(int liters, int numberOfMiles)
 {
-	if(liters <= 0 || numberOfMiles <= 0)
-	{
-		cout<<"Fatal Error: Exiting program.\n";
-		exit(1);
-	}
-	double gallons = liters/LITERS_PER_GALLON;
-	return (numberOfMiles/gallons);
+    if(liters <= 0 || numberOfMiles <= 0)
+    {
+        cout<<"Fatal Error: Exiting program.\n";
+        exit(1);
+    }
+    double gallons = liters/LITERS_PER_GALLON;
+    return (numberOfMiles/gallons);
 }
 
 /*
-void erase()
-{
+   void erase()
+   {
    cout<<"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
-}
-*/
+   }
+   */
